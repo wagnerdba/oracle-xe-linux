@@ -27,4 +27,4 @@ EXPOSE 1521 5500
 
 # 6 - Script de inicialização
 # Roda o banco automaticamente quando o container sobe
-CMD ["/bin/bash", "-c", "sudo /etc/init.d/oracle-xe-21c start && tail -f /opt/oracle/diag/rdbms/*/*/alert*.log"]
+CMD ["/bin/bash", "-c", "/etc/init.d/oracle-xe-21c start && tail -f /opt/oracle/diag/rdbms/*/*/alert*.log"]
