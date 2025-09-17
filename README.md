@@ -82,17 +82,17 @@ $ docker push wagnerpires/oracle-xe-linux:latest
 
 ## COMANDOS SQL DIVERSOS
 
-## Criar usuário (schema)
+### Criar usuário (schema)
   
   CREATE USER C##shiva_modulos IDENTIFIED BY "123456";
 
   ALTER USER C##shiva_modulos QUOTA UNLIMITED ON USERS;
 
-## Permitir login
+### Permitir login
   
   GRANT CREATE SESSION TO C##shiva_modulos;
   
-## Permissões DDL (criar objetos no próprio schema)
+### Permissões DDL (criar objetos no próprio schema)
 
   GRANT CREATE TABLE TO C##shiva_modulos;
 
@@ -108,7 +108,7 @@ $ docker push wagnerpires/oracle-xe-linux:latest
 
   GRANT CREATE TYPE TO C##shiva_modulos;
   
-## Permissões DML
+### Permissões DML
  
   GRANT SELECT ANY TABLE TO C##shiva_modulos;
 
@@ -118,11 +118,11 @@ $ docker push wagnerpires/oracle-xe-linux:latest
 
   GRANT DELETE ANY TABLE TO C##shiva_modulos;
   
-## Definir tablespace padrão e liberar espaço
+### Definir tablespace padrão e liberar espaço
   
   ALTER USER C##shiva_modulos DEFAULT TABLESPACE USERS QUOTA UNLIMITED ON USERS;
   
-## Comandos de usuário (exemplo)
+### Comandos de usuário (exemplo)
 
   CREATE TABLE C##shiva_modulos.WR_TEMP (ID INT);
   
