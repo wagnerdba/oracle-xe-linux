@@ -1,3 +1,6 @@
+# docker build -t oracle-xe-linux .
+# docker run -it --name oracle-xe-linux -p 1521:1521 -p 5500:5500 oracle-xe-linux bash
+
 FROM oraclelinux:8
 
 # 1 - Atualiza pacotes e instala utilitários necessários
