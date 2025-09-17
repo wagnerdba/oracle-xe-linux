@@ -1,3 +1,5 @@
+# ORACLE LINUX 8 COM O ORACLE DATABASE XE INSTALADO
+
 - BAIXAR RPM 
 
   https://www.oracle.com/database/technologies/xe-downloads.html
